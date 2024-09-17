@@ -1,0 +1,11 @@
+<div class="header-title">brahm wongwandanee</div>
+<div class="header-subtitle">บราห์ม วงษ์วันทนีย์</div>
+
+<nav class="navigation">
+    {% for item in site.data.navigation %}
+        <div class="nav-button-container"> <a href="{{ item.link }}" 
+            {% if page.url == item.link %}class="nav-button-selected"
+            {% else %}class="nav-button" 
+            {% endif %}> {{ item.name }} </a></div>
+    {% endfor %}
+</nav>

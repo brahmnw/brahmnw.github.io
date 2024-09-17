@@ -1,0 +1,56 @@
+/* 
+COLOUR SCHEME
+
+GUNMETAL BLACK: #2A2D34
+WHITE SMOKE: #2A2D34
+GAMBOGE YELLOW: #F3A738
+LIGHT RED: #FF686B
+
+*/
+
+body {
+    background-color: #2A2D34;
+    color: #fff1ed;
+    font-family: 'Aptos', 'Segoe UI', 'Arial', sans-serif;
+}
+
+.site-header {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+}
+
+.site-body {
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav-button {
+    color: #fff1ed;
+    text-decoration: none;
+}
+
+.nav-button:hover {
+    display: inline-block;
+    text-decoration: underline;
+}
+
+.nav-button-selected {
+    color: #F3A738;
+    text-decoration: none;
+}
+
+.nav-button-selected:hover {
+    text-decoration: underline;
+}
+
+.nav-button-container {
+    padding-left: 5%;
+    padding-right: 5%;
+    display: inline-block;
+}
+
+
+
