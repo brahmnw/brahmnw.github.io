@@ -11,19 +11,23 @@ LIGHT RED: #FF686B
 
 @import "transitions";
 
+html {
+    font-size: 16px;
+}
 body {
     background-color: #2A2D34;
     color: #fff1ed;
     font-family: 'Aptos', 'Segoe UI', 'Arial', sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     margin:0%;
 }
 
 @media (max-width: 450px) {
     .site-body {width:90%}
     body.splash {background-size: cover; background-repeat: no-repeat;}
-    .home-title {font-size: 90px;}
-    .home-subtitle {font-size: 45px;}
+    /*.home-title {font-size: 90px;}
+    .home-subtitle {font-size: 4rem;}*/
+    .home-container {padding-top:50%;}
     body {font-size: 20px;}
 }
 
@@ -62,17 +66,15 @@ body.splash {
 }
 
 .home-title {
-    font-size: 44px;
+    font-size: 3.5rem;
     text-decoration: bold;
     color: #fff1ed;
 }
 
 .home-subtitle {
-    font-size: 20px;
+    font-size: 1rem;
     color:#6f7582;
 }
-
-
 
 .header {
     display: inline;
