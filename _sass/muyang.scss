@@ -19,7 +19,13 @@ body {
     margin:0%;
 }
 
-
+@media (max-width: 450px) {
+    .site-body {width:90%}
+    body.splash {background-size: cover; background-repeat: no-repeat;}
+    .home-title {font-size: 90px;}
+    .home-subtitle {font-size: 45px;}
+    body {font-size: 20px;}
+}
 
 .site-header {
     text-align: center;
@@ -45,7 +51,7 @@ body {
 
 body.splash {
     background-image: url("/assets/images/background.jpg");
-    background-size:fill;
+    background-size:cover;
 }
 
 .home-container {
@@ -65,6 +71,8 @@ body.splash {
     font-size: 20px;
     color:#6f7582;
 }
+
+
 
 .header {
     display: inline;
