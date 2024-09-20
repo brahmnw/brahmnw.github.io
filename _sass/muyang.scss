@@ -11,9 +11,7 @@ LIGHT RED: #FF686B
 
 @import "transitions";
 
-html {
-    font-size: 16px;
-}
+
 body {
     background-color: #2A2D34;
     color: #fff1ed;
@@ -22,12 +20,13 @@ body {
     margin:0%;
 }
 
-@media (max-width: 450px) {
-    .site-body {width:90%}
-    body.splash {background-size: cover; background-repeat: no-repeat;}
-    /*.home-title {font-size: 90px;}
-    .home-subtitle {font-size: 4rem;}*/
+@media screen and (max-width: 450px) {
+    .site-body {width:90%; min-width:auto;}
+    body.splash {background-size: fill;}
+    .home-title {font-size: 8rem;}
+    .home-subtitle {font-size: 4rem;}
     .home-container {padding-top:50%;}
+    .nav-button {font-size:2.5rem;}
     body {font-size: 20px;}
 }
 
@@ -55,7 +54,9 @@ body {
 
 body.splash {
     background-image: url("/assets/images/background.jpg");
-    background-size:cover;
+    background-size: 100% 100%;
+    background-attachment:fixed;
+    background-repeat: no-repeat;
 }
 
 .home-container {
@@ -81,13 +82,13 @@ body.splash {
 }
 
 .header-title {
-    font-size: 28px;
+    font-size: 2rem;
     text-decoration: bold;
     color: #fff1ed;
 }
 
 .header-subtitle {
-    font-size: 12px;
+    font-size: 1rem;
     color:#6f7582;
 }
 
