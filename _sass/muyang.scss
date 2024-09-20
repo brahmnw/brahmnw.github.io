@@ -16,7 +16,10 @@ body {
     color: #fff1ed;
     font-family: 'Aptos', 'Segoe UI', 'Arial', sans-serif;
     font-size: 16px;
+    margin:0%;
 }
+
+
 
 .site-header {
     text-align: center;
@@ -39,12 +42,21 @@ body {
     margin-right: 0;
 }
 
-.splash-body {
+
+body.splash {
     background-image: url("/assets/images/background.jpg");
-    margin:0;
-    padding:0;
-    min-height: 100%;
-    min-width: 100%;
+    background-size:cover;
+}
+
+.splash-body {
+    
+    
+    background-size:cover;
+    margin:0%;
+    padding:0%;
+    border-width: 0%;
+    height: 100%;
+    width: 100%;
 }
 
 .home-container {
