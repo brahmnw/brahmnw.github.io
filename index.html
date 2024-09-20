@@ -5,11 +5,11 @@ layout: splash
 
 <div class="home-container">
     <img class="rounded" src="/assets/images/icon.jpg" alt="fern!" width="150" height="150">
-    <div class="home-title">บราห์ม วงษ์วันทนีย์  </div>
-    <div class="home-subtitle">brahm wongwandanee</div>
+    <div class="home-title">brahm</div>
+    <div class="home-subtitle">brahmwongwandanee@gmail.com</div>
     <nav class="navigation">
         {% for item in site.data.home-links %}
-            <div class="nav-button-container"> <a href="{{ item.link }}" 
+            <div class="home-nav-button-container"> <a href="{{ item.link }}" 
                 {% if page.url == item.link %}class="nav-button-selected"
                 {% else %}class="nav-button" 
                 {% endif %}> {{ item.name }} </a></div>

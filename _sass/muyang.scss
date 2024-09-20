@@ -45,23 +45,12 @@ body {
 
 body.splash {
     background-image: url("/assets/images/background.jpg");
-    background-size:cover;
-}
-
-.splash-body {
-    
-    
-    background-size:cover;
-    margin:0%;
-    padding:0%;
-    border-width: 0%;
-    height: 100%;
-    width: 100%;
+    background-size:fill;
 }
 
 .home-container {
     text-align: center;
-    padding-top: 15%;
+    padding-top: 12%;
     animation-name: fade-in;
     animation-duration: 4s;
 }
@@ -117,6 +106,14 @@ body.splash {
     padding-top: 1%;
     display: inline-block;
 }
+
+.home-nav-button-container {
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 1%;
+    display: inline-block;
+}
+
 .footer-nav-button-container {
     padding-left: 1%;
     padding-right: 1%;

@@ -1,6 +1,10 @@
-- name: me
+- name: continue to website
   link: /me/
-- name: projects
-  link: /projects/
-- name: gallery
-  link: /gallery/
+- name: instagram
+  link: https://www.instagram.com/brahmnw/
+- name: github
+  link: https://github.com/brahmnw
+- name: linkedin
+  link: https://www.linkedin.com/in/brahmnw/
+- name: osu!
+  link: https://osu.ppy.sh/users/5554231
