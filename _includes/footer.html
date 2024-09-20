@@ -1,0 +1,10 @@
+<hr style="border-color:#2A2D34;">
+
+<nav class="navigation">
+    {% for item in site.data.footer-links %}
+        <div class="footer-nav-button-container"> <a href="{{ item.link }}" 
+            {% if page.url == item.link %}class="nav-button-selected"
+            {% else %}class="nav-button" 
+            {% endif %}> {{ item.name }} </a></div>
+    {% endfor %}
+</nav>

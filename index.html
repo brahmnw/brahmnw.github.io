@@ -1,6 +1,18 @@
 ---
 title: home
-layout: home
+layout: splash
 ---
 
-hi i'm brahm :)
+<div class="home-container">
+    <img class="rounded" src="/assets/images/icon.jpg" alt="fern!" width="150" height="150">
+    <div class="home-title">บราห์ม วงษ์วันทนีย์  </div>
+    <div class="home-subtitle">brahm wongwandanee</div>
+    <nav class="navigation">
+        {% for item in site.data.home-links %}
+            <div class="nav-button-container"> <a href="{{ item.link }}" 
+                {% if page.url == item.link %}class="nav-button-selected"
+                {% else %}class="nav-button" 
+                {% endif %}> {{ item.name }} </a></div>
+        {% endfor %}
+    </nav>
+</div>
