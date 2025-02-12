@@ -66,13 +66,14 @@ body.splash {
 }
 
 .home-title {
-    font-size: 3.5rem;
+    font-size: 4rem;
     text-decoration: bold;
     color: #fff1ed;
 }
 
 .home-subtitle {
-    font-size: 1rem;
+    font-size: 2rem;
+    text-decoration: bold;
     color:#6f7582;
 }
 
@@ -87,13 +88,14 @@ body.splash {
 }
 
 .header-subtitle {
-    font-size: 1rem;
+    font-size: 1.5rem;
     color:#6f7582;
 }
 
 .nav-button {
     color: #fff1ed;
     text-decoration: none;
+    font-size: 1.15rem;
 }
 
 .nav-button:hover {
@@ -104,6 +106,7 @@ body.splash {
 .nav-button-selected {
     color: #F3A738;
     text-decoration: none;
+    font-size: 1.15rem;
 }
 
 .nav-button-selected:hover {
