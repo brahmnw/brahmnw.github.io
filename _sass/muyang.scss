@@ -16,8 +16,12 @@ body {
     background-color: #2A2D34;
     color: #fff1ed;
     font-family: 'Aptos', 'Segoe UI', 'Arial', sans-serif;
-    font-size: 1rem;
+    font-size: 1.1rem;
     margin:0%;
+}
+
+.mono {
+    font-family: 'JetBrainsMono NF', 'Consolas', monospace;
 }
 
 @media screen and (max-width: 600px) {
@@ -52,7 +56,7 @@ body {
 
 
 body.splash {
-    background-image: url("/assets/images/background.jpg");
+    background-color: rgb(20, 20, 30);
     background-size: 100% 100%;
     background-attachment:fixed;
     background-repeat: no-repeat;
@@ -60,21 +64,30 @@ body.splash {
 
 .home-container {
     text-align: center;
-    padding-top: 12%;
-    animation-name: fade-in;
-    animation-duration: 4s;
+    padding-top: 17.5%;
+    padding-bottom: 17.5%;
+    font-family: 'JetBrainsMono NF', 'Consolas', monospace;
+}
+
+.home-content {
+    display: inline-flex;
 }
 
 .home-title {
-    font-size: 4rem;
-    text-decoration: bold;
-    color: #fff1ed;
+    font-size: 2.5rem;
+    color: #d2cbd6;
 }
 
 .home-subtitle {
-    font-size: 2rem;
+    font-size: 1rem;
     text-decoration: bold;
     color:#6f7582;
+}
+
+.home-navigation {
+    text-align: left;
+    margin-top: 4.5%;
+    margin-left: 10%;
 }
 
 .header {
@@ -82,35 +95,44 @@ body.splash {
 }
 
 .header-title {
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-decoration: bold;
+    font-family: 'JetBrainsMono NF', 'Consolas', monospace;
     color: #fff1ed;
 }
 
 .header-subtitle {
     font-size: 1.5rem;
+    font-family: 'JetBrainsMono NF', 'Consolas', monospace;
     color:#6f7582;
 }
 
 .nav-button {
-    color: #fff1ed;
+    color: #d2cbd6;
     text-decoration: none;
     font-size: 1.15rem;
+}
+
+.home-continue {
+    color: #929094;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.home-continue:hover {
+    color: #b1abb4;
+    text-decoration: none;
 }
 
 .nav-button:hover {
     display: inline-block;
-    text-decoration: underline;
+    color: #b79dcf;
 }
 
 .nav-button-selected {
-    color: #F3A738;
+    color: #935db8;
     text-decoration: none;
     font-size: 1.15rem;
-}
-
-.nav-button-selected:hover {
-    text-decoration: underline;
 }
 
 .nav-button-container {
@@ -118,13 +140,13 @@ body.splash {
     padding-right: 5%;
     padding-top: 1%;
     display: inline-block;
+    font-family: 'JetBrainsMono NF', 'Consolas', monospace;
 }
 
 .home-nav-button-container {
     padding-left: 1%;
     padding-right: 1%;
     padding-top: 1%;
-    display: inline-block;
 }
 
 .footer-nav-button-container {
