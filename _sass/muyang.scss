@@ -13,10 +13,10 @@ LIGHT RED: #FF686B
 
 
 body {
-    background-color: #2A2D34;
+    background-color: rgb(20, 20, 30);
     color: #fff1ed;
     font-family: 'Aptos', 'Segoe UI', 'Arial', sans-serif;
-    font-size: 1.1rem;
+    font-size: 1.25rem;
     margin:0%;
 }
 
@@ -162,6 +162,25 @@ img.rounded {
     margin: 0;
 }
 
+.layout-two-columns {
+    display: inline-flex;
+    width: 100%;
+}
+
+.column {
+    margin: 2%;
+    width: 50%;
+    margin-top: 0%;
+}
+
+.standard-margin {
+    margin: 2%;
+}
+
 p {
     line-height:  1.6;
+}
+
+h3 {
+    font-family: 'JetBrainsMono NF', 'Consolas', monospace;
 }
