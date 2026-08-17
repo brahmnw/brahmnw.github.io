@@ -23,6 +23,7 @@ body {
     background-color: var(--theme-colour-dark);
     color: var(--theme-colour-light);
     font-family: var(--font-body);
+    font-size: 1.5rem;
 }
 
 .light {
@@ -45,6 +46,9 @@ body {
 
 .font-thai {
     font-family: var(--font-thai);
+}
+.font-mono {
+    font-family: var(--font-mono);
 }
 
 /* TEXT EDITS */
