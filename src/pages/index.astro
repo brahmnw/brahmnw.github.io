@@ -1,10 +1,26 @@
 ---
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Splash from '../components/Splash.astro';
+import Block from '../components/Block.astro';
 ---
 
 <Layout>
-	hi
+
+	<Splash>
+		<div class="shadow">
+			<h1 style="font-size: 6rem; color: #fff; line-height: 0.1;">i'm <span class="accent">brahm!</span></h1>
+			<h3 class="font-thai">บราห์ม วงษ์วันทนีย์</h3>
+		</div>
+	</Splash>
+
+	<Block theme="dark">
+		<h3>about me</h3>
+		<b>hello world!</b> hello world!
+	</Block>
+
+	<Block theme="light">
+		<h3>extracurricular involvement</h3>
+		<b>hello world!</b> hello world!
+	</Block>
+	
 </Layout>

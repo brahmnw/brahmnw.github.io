@@ -1,0 +1,59 @@
+
+<nav class="navbar light">
+    <div class="navbar-content">
+        <a class="navbar-name" style="letter-spacing: 0.17em; font-family: var(--font-header)" href="/">NARAWUTTI</a>
+        <div class="navbar-links">
+            <a href="/about">about</a>
+            <a href="/projects">projects</a>
+            <a href="/illustrations">illustrations</a>
+        </div>
+    </div>
+</nav>
+
+
+
+
+<style>
+
+    .navbar {
+        position: fixed;
+        top: 1rem;
+        left: 50%;
+        width: min(90%, 960px);
+        transform: translateX(-50%);
+        border-radius: 0.75rem;
+
+        background-color: rgba(255, 255, 255, 0.6);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+
+        z-index: 1000;
+    }
+
+    .navbar-content {
+        width: 95%;
+        margin-inline: auto;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        padding-block: 0.75rem;
+    }
+
+    .navbar-links {
+        display: flex;
+        gap: 2rem;
+        
+    }
+
+    .navbar-content a {
+        color: var(--theme-colour-dark);
+        text-decoration: none;
+    }
+
+    .navbar-content a:hover {
+        color: var(--theme-colour-accent-dim);
+        text-decoration: none;
+    }
+</style>

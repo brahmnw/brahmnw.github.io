@@ -1,0 +1,40 @@
+<section class="splash"> 
+    <div class="splash-content">
+        <slot />
+    </div>
+</section>
+
+<style>
+
+.splash::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index:-50;
+
+    background-image: url("/images/headers/splash.png");
+    background-size: cover;
+    background-position: center;
+
+    filter: blur(8px);
+    transform: scale(1.05);
+}
+
+.splash {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.splash-content {
+    width: min(90%, 960px);
+    margin-inline: auto;
+    z-index: 1;
+}
+
+</style>

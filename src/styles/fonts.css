@@ -1,0 +1,96 @@
+/* for font face declarations */
+
+/* Atkinson Hyperlegible */
+
+@font-face {
+    font-family: "Atkinson Hyperlegible";
+    src: url("/fonts/AtkinsonHyperlegible-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Atkinson Hyperlegible";
+    src: url("/fonts/AtkinsonHyperlegible-Italic.ttf") format("truetype");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Atkinson Hyperlegible";
+    src: url("/fonts/AtkinsonHyperlegible-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Atkinson Hyperlegible";
+    src: url("/fonts/AtkinsonHyperlegible-BoldItalic.ttf") format("truetype");
+    font-weight: 700;
+    font-style: italic;
+}
+
+
+/* IBM Plex Sans Thai */
+
+@font-face {
+    font-family: "IBM Plex Sans Thai";
+    src: url("/fonts/IBMPlexSansThai-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "IBM Plex Sans Thai";
+    src: url("/fonts/IBMPlexSansThai-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "IBM Plex Sans Thai";
+    src: url("/fonts/IBMPlexSansThai-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+/* Maple Mono */
+
+@font-face {
+    font-family: "Maple Mono";
+    src: url("/fonts/MapleMono-NF-CN-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Maple Mono";
+    src: url("/fonts/MapleMono-NF-CN-Italic.ttf") format("truetype");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Maple Mono";
+    src: url("/fonts/MapleMono-NF-CN-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Maple Mono";
+    src: url("/fonts/MapleMono-NF-CN-BoldItalic.ttf") format("truetype");
+    font-weight: 700;
+    font-style: italic;
+}
+
+
+/* Momo Trust Display */
+
+@font-face {
+    font-family: "Momo Trust Display";
+    src: url("/fonts/MomoTrustDisplay-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}

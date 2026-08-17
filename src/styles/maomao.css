@@ -1,0 +1,77 @@
+
+@import "./fonts.css";
+
+/* constants */
+
+:root {
+
+    /* COLOURS */
+    --theme-colour-dark: #2D3142;
+    --theme-colour-light: #BAC0DA;
+    --theme-colour-accent-bright: #0BDB92;
+    --theme-colour-accent-dim: #246E71;
+    --colour-white: #FFFFFF;
+
+    /* FONTS */
+    --font-header: "Momo Trust Display", "Nunito", "Trebuchet MS", "Arial Black", sans-serif;
+    --font-body: "Atkinson Hyperlegible", "Segoe UI", "Helvetica Neue", sans-serif;
+    --font-thai: "IBM Plex Sans Thai", "Noto Sans Thai", Tahoma, Arial, sans-serif;
+    --font-mono: "Maple Mono", "JetBrains Mono", "Cascadia Mono", "Consolas", monospace;
+}
+
+body {
+    background-color: var(--theme-colour-dark);
+    color: var(--theme-colour-light);
+    font-family: var(--font-body);
+}
+
+.light {
+    background-color: var(--theme-colour-light);
+    color: var(--theme-colour-dark);
+}
+
+.dark {
+    background-color: var(--theme-colour-dark);
+    color: var(--theme-colour-light);
+}
+
+.shadow {
+    filter: drop-shadow(0px 4px 4px #00000080);
+}
+
+.accent {
+    color: var(--theme-colour-accent-bright);
+}
+
+.font-thai {
+    font-family: var(--font-thai);
+}
+
+/* TEXT EDITS */
+
+h1 {
+    font-family: var(--font-header);
+    font-size: 4rem;
+    letter-spacing: 0.17em;
+}
+
+h2 {
+    font-family: var(--font-header);
+    letter-spacing: 0.17em;
+    font-size: 3rem;
+    line-height: 1;
+}
+
+h3 {
+    font-family: var(--font-header);
+    letter-spacing: 0.17em;
+    font-size: 2rem;
+    line-height: 1;
+}
+
+
+h4 {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1;
+}
