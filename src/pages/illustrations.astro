@@ -2,9 +2,25 @@
 import Layout from "../layouts/Layout.astro"
 import Block from "../components/Block.astro"
 import Header from "../components/Header.astro"
+import Gallery from "../components/Gallery.astro"
 ---
 
 <Layout>
     <Header>illustrations</Header>
-    <Block>wip</Block>
+    <Block>
+        <h3>commissions <span class="accent-dim">details</span> &gt</h3>
+        currently i am not taking commissions. details will be updated on THIS page!<br>
+        <h4>pricing!</h4>
+        $10 - one line<br>
+        $200 - sketch<br>
+        $1000 - full rendered com
+    </Block>
+    <Block theme="dark">
+
+    </Block>
+    <Block>
+        <h3>illustration <span class="accent-dim">gallery</span> &gt</h3>
+
+        <Gallery />
+    </Block>
 </Layout>

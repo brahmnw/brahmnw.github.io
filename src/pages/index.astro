@@ -3,10 +3,8 @@ import Layout from '../layouts/Layout.astro';
 import Splash from '../components/Splash.astro';
 import Block from '../components/Block.astro';
 import Button from "../components/Button.astro";
-import Card from "../components/Card.astro";
-import Grid from "../components/Grid.astro";
-import CardAttrib from '../components/CardAttrib.astro';
 import FeaturedWork from '../components/FeaturedWork.astro';
+import Gallery from "../components/Gallery.astro"
 ---
 
 <Layout>
@@ -54,11 +52,10 @@ import FeaturedWork from '../components/FeaturedWork.astro';
 	</Block>
 
 	<Block theme="light">
-		<h3>illustration gallery &gt;</h3>
+		<h3>illustration <span class="accent-dim">gallery</span> &gt</h3>
 		<Button link="/illustrations">view more of my art</Button>
 		<br>
-		GALLERY STYLE WORK IN PROGRESS
-
+		<Gallery folder="featured"/>
 		
 	</Block>
 	
