@@ -54,6 +54,18 @@ body {
     font-family: var(--font-mono);
 }
 
+.code-block-dim {
+    background-color: color-mix(in srgb, var(--theme-colour-dark) 80%, transparent);
+    font-size: 1.1rem;
+    color: var(--theme-colour-light);
+    font-family: var(--font-mono);
+    border-radius: 0.3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+}
+
 /* TEXT EDITS */
 
 h1 {
