@@ -1,0 +1,47 @@
+---
+const {
+    folder = "illustrations"
+} = Astro.props;
+
+const allImages = import.meta.glob<ImageMetadata>(
+    "../assets/gallery/**/*.{png,jpg,jpeg,webp,gif}",
+    {
+        eager: true,
+        import: "default",
+    }
+);
+
+const images = Object.entries(allImages)
+    .filter(([path]) => path.includes(`/gallery/${folder}/`))
+    .map(([, image]) => image);
+---
+
+<div class="gallery">
+    {images.map((image) => (
+        <img src={image.src} alt="" />
+    ))}
+</div>
+
+<style>
+    .gallery {
+    columns: 3;
+    column-gap: 1.5rem;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+
+    margin-bottom: 1.5rem;
+    border-radius: 0.75rem;
+
+    break-inside: avoid;
+    transition: 0.2s ease-out;
+}
+
+.gallery img:hover {
+    transform: scale(1.02);
+}
+
+</style>

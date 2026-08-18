@@ -1,0 +1,116 @@
+
+@import "./fonts.css";
+
+/* constants */
+
+:root {
+
+    /* COLOURS */
+    --theme-colour-dark: #2D3142;
+    --theme-colour-light: #BAC0DA;
+    --theme-colour-accent-bright: #0BDB92;
+    --theme-colour-accent-dim: #246E71;
+    --colour-white: #FFFFFF;
+    --colour-osu-bright: #EC7FEE;
+    --colour-osu-dim: #AC659C;
+    --colour-favourites: #696CFF;
+    --colour-extracurriculars: #F44965;
+
+    /* FONTS */
+    --font-header: "Momo Trust Display", "Nunito", "Trebuchet MS", "Arial Black", sans-serif;
+    --font-body: "Atkinson Hyperlegible", "Segoe UI", "Helvetica Neue", sans-serif;
+    --font-thai: "IBM Plex Sans Thai", "Noto Sans Thai", Tahoma, Arial, sans-serif;
+    --font-mono: "Maple Mono", "JetBrains Mono", "Cascadia Mono", "Consolas", monospace;
+}
+
+body {
+    background-color: var(--theme-colour-dark);
+    color: var(--theme-colour-light);
+    font-family: var(--font-body);
+    font-size: 1.5rem;
+}
+
+.light {
+    background-color: var(--theme-colour-light);
+    color: var(--theme-colour-dark);
+}
+
+.dark {
+    background-color: var(--theme-colour-dark);
+    color: var(--theme-colour-light);
+}
+
+.shadow {
+    filter: drop-shadow(0px 4px 4px #00000080);
+}
+
+.accent {
+    color: var(--theme-colour-accent-bright);
+}
+
+.accent-dim {
+    color: var(--theme-colour-accent-dim);
+}
+
+.accent-osu {
+    color: var(--colour-osu-bright);
+}
+
+.accent-favourites {
+    color: var(--colour-favourites);
+}
+
+.accent-extracurriculars {
+    color: var(--colour-extracurriculars);
+}
+
+.font-thai {
+    font-family: var(--font-thai);
+}
+.font-mono {
+    font-family: var(--font-mono);
+}
+
+.code-block-dim {
+    background-color: color-mix(in srgb, var(--theme-colour-dark) 80%, transparent);
+    font-size: 1.1rem;
+    color: var(--theme-colour-light);
+    font-family: var(--font-mono);
+    border-radius: 0.3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+}
+
+/* TEXT EDITS */
+
+h1 {
+    font-family: var(--font-header);
+    font-size: 4rem;
+    letter-spacing: 0.17em;
+}
+
+h2 {
+    font-family: var(--font-header);
+    letter-spacing: 0.17em;
+    font-size: 3rem;
+    line-height: 1;
+}
+
+h3 {
+    font-family: var(--font-header);
+    letter-spacing: 0.17em;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 1;
+}
+
+
+h4 {
+    font-family: var(--font-header);
+    font-size: 1.5rem;
+    letter-spacing: 0.17em;
+    font-weight: 400;
+    line-height: 1;
+} 

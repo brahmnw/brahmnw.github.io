@@ -1,0 +1,52 @@
+---
+const {
+    headerImage = "images/headers/header.png"
+} = Astro.props;
+---
+
+
+<section class="header" style={`--header-image: url("${headerImage}")`}>
+    <div class="header-contents">
+        <h2 class="shadow" style="color: #fff;"><slot /></h2>
+    </div>
+</section>
+
+<style>
+
+.header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index:-50;
+
+    background-image: var(--header-image);
+    background-size: cover;
+    background-position: center;
+
+    filter: blur(8px) brightness(0.8);
+    transform: scale(1.05);
+}
+
+.header {
+    position: relative;
+    overflow: hidden;
+
+    width: 100%;
+    min-height: 25vh;
+
+    display: flex;
+    align-items: flex-end;
+
+    justify-content:center;
+    overflow: hidden;
+}
+
+.header-contents {
+    width: min(90%, 960px);
+    margin-inline: auto;
+    padding-bottom: 0.2rem;   
+
+    z-index: 1;
+}
+
+</style>

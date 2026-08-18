@@ -1,0 +1,27 @@
+---
+const { 
+    theme = "light", 
+    contentPaddingWidth = "5%",
+    contentPaddingHeight = "3rem",
+} = Astro.props;
+---
+
+<section class={`block ${theme}`}>
+    <div class="block-content" style={`--content-padding-width: ${contentPaddingWidth}; --content-padding-height: ${contentPaddingHeight}`}>
+        <slot />
+    </div>
+</section>
+
+<style>
+
+.block-content {
+    width: min(
+        calc(100% - 2 * var(--content-padding-width)),
+        960px
+    );
+    padding-top: var(--content-padding-height);
+    padding-bottom: calc(var(--content-padding-height) + 0.5rem);
+    margin-inline: auto;
+}
+
+</style>

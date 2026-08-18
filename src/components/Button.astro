@@ -1,0 +1,63 @@
+---
+import arrowRight from "../assets/ui/arrow-right.svg";
+
+const { 
+    theme = "dark", 
+    link = "/"
+} = Astro.props;
+---
+
+<a href=`${link}` class="button-text">
+    <div class=`button ${theme}`>
+        <b><slot /></b>
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3.33337 7.99998H12.6667M8.00004 12.6666L12.6667 7.99998L8.00004 3.33331" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </div>
+</a>
+
+
+
+<style>
+
+.button-text {
+    text-decoration: none;
+}
+
+.button-text:hover {
+    font-size: 1rem;
+}
+
+.button {
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: flex;
+    align-items: center;
+    padding-inline: 1rem;
+    border-radius: 2rem;
+    width: fit-content;
+    height: 1.5rem;
+    gap: 0.75rem;
+    font-size: 1rem;   
+}
+
+.button:hover {
+    transform: scale(1.02);
+    transition: transform 0.2s ease-out;
+}
+
+.dark {
+    background-color: var(--theme-colour-dark);
+    color: var(--theme-colour-light);
+    
+}
+
+.light {
+    background-color: var(--theme-colour-light);
+    color: var(--theme-colour-dark);
+    
+}
+
+</style>
