@@ -2,6 +2,8 @@
 import Layout from "../layouts/Layout.astro";
 import Block from "../components/Block.astro";
 import Header from "../components/Header.astro";
+import Grid from "../components/Grid.astro";
+import Card from "../components/Card.astro";
 ---
 
 <Layout>
@@ -20,7 +22,10 @@ import Header from "../components/Header.astro";
     <Block theme="dark">
         <h3>extracurricular involvement &gt</h3>
 
-        GALLERY STYLE WORK IN PROGRESS
+        <Grid columns="2">
+            <Card></Card>
+            <Card></Card>
+        </Grid>
     </Block>
 
     <Block>

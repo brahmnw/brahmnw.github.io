@@ -84,6 +84,7 @@ h2 {
 h3 {
     font-family: var(--font-header);
     letter-spacing: 0.17em;
+    font-weight: 400;
     font-size: 2rem;
     line-height: 1;
 }

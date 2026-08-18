@@ -1,0 +1,37 @@
+---
+const {
+    colour = "var(--theme-colour-accent-dim)"
+} = Astro.props;
+---
+
+<div class="attrib" style={`--attrib-colour: ${colour}`}>
+    <span class="attrib-text">
+        <slot />
+    </span>
+</div>
+
+<style>
+
+.attrib {
+    font-family: var(--font-mono);
+    background-color: var(--attrib-colour);
+    border-radius: 100rem;
+    
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+
+    line-height: 1;
+}
+
+.attrib-text {
+    color: #fff;
+    font-size: 0.75rem;
+}
+
+</style>

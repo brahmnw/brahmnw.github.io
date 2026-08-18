@@ -3,6 +3,10 @@ import Layout from '../layouts/Layout.astro';
 import Splash from '../components/Splash.astro';
 import Block from '../components/Block.astro';
 import Button from "../components/Button.astro";
+import Card from "../components/Card.astro";
+import Grid from "../components/Grid.astro";
+import CardAttrib from '../components/CardAttrib.astro';
+import FeaturedWork from '../components/FeaturedWork.astro';
 ---
 
 <Layout>
@@ -43,7 +47,10 @@ import Button from "../components/Button.astro";
 
 	<Block theme="dark">
 		<h3>featured work &gt;</h3>
-		GALLERY STYLE WORK IN PROGRESS
+
+		<FeaturedWork />
+		<br>
+		<Button link="/projects" theme="light">see the full list</Button>
 	</Block>
 
 	<Block theme="light">
