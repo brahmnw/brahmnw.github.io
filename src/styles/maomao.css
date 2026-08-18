@@ -11,6 +11,10 @@
     --theme-colour-accent-bright: #0BDB92;
     --theme-colour-accent-dim: #246E71;
     --colour-white: #FFFFFF;
+    --colour-osu-bright: #EC7FEE;
+    --colour-osu-dim: #AC659C;
+    --colour-favourites: #696CFF;
+    --colour-extracurriculars: #F44965;
 
     /* FONTS */
     --font-header: "Momo Trust Display", "Nunito", "Trebuchet MS", "Arial Black", sans-serif;
@@ -43,8 +47,21 @@ body {
 .accent {
     color: var(--theme-colour-accent-bright);
 }
+
 .accent-dim {
     color: var(--theme-colour-accent-dim);
+}
+
+.accent-osu {
+    color: var(--colour-osu-bright);
+}
+
+.accent-favourites {
+    color: var(--colour-favourites);
+}
+
+.accent-extracurriculars {
+    color: var(--colour-extracurriculars);
 }
 
 .font-thai {
@@ -91,7 +108,9 @@ h3 {
 
 
 h4 {
-    font-size: 2rem;
+    font-family: var(--font-header);
+    font-size: 1.5rem;
+    letter-spacing: 0.17em;
     font-weight: 400;
     line-height: 1;
 } 

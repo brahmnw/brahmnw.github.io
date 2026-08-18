@@ -3,7 +3,7 @@ const {
     title = "test",
     description = "test",
     image = "images/test.png",
-    colour = "var(--theme-colour-accent-dim)",
+    colour = "var(--colour-favourites)",
 } = Astro.props;
 ---
 
@@ -20,8 +20,8 @@ const {
 <style>
 
 .card {
-    background-color: var(--theme-colour-light);
-    color: var(--theme-colour-dark);
+    background-color: var(--theme-colour-dark);
+    color: var(--theme-colour-light);
     border-radius: 0.75rem;
     padding: 1rem;
 
@@ -36,18 +36,18 @@ const {
 
 .card-image {
     width: 100%;
-    height: 200px;
+    height: 300px;
     border-radius: 0.75rem;
     object-fit: cover;
 }
 
 .card-title {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-family: var(--font-header);
 }
 
 .card-description {
-    font-size: 1rem;
+    font-size: 0.75rem;
 }
 
 .card-contents {

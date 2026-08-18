@@ -4,6 +4,9 @@ import Block from "../components/Block.astro";
 import Header from "../components/Header.astro";
 import Grid from "../components/Grid.astro";
 import Card from "../components/Card.astro";
+import CardSmall from "../components/CardSmall.astro";
+import CardTall from "../components/CardTall.astro";
+import Button from "../components/Button.astro";
 ---
 
 <Layout>
@@ -16,15 +19,15 @@ import Card from "../components/Card.astro";
         currently i live in vancouver, bc taking my 3rd year of computer science at the university of british columbia!<br><br>
         i’m currently working on <b>godot, c#, c++,</b> and <b>figma</b> in my free time.<br><br>
         i’m a huge extrovert, and i love to chat. reach out if you wanna talk about anything!<br><br>
-        <span class="font-mono">wnarawutti@gmail.com<br>@brahm (discord)</span>
+        <span class="code-block-dim">email: wnarawutti@gmail.com</span><br><span class="code-block-dim">discord: @brahm</span>
     </Block>
 
     <Block theme="dark">
-        <h3>extracurricular involvement &gt</h3>
+        <h3><span class="accent-extracurriculars">extracurricular</span> involvement &gt</h3>
 
         <Grid columns="2">
-            <Card></Card>
-            <Card></Card>
+            <Card title="UBC Esports Association" description="RG Director → VP Marketing (2024-Ongoing)" colour="var(--colour-extracurriculars)" image="/images/misc-thumb/ubcea-thumb.jpg"></Card>
+            <Card title="NanoRooms" description="Animation Intern (2026-Ongoing)" colour="var(--colour-extracurriculars)" image="/images/misc-thumb/nanorooms-thumb.png"></Card>
         </Grid>
     </Block>
 
@@ -44,9 +47,19 @@ import Card from "../components/Card.astro";
     </Block>
 
     <Block theme="dark">
-        <h3>osu! career &gt</h3>
+        <h3><span class="accent-osu">osu!</span> career &gt</h3>
 
-        GALLERY STYLE WORK IN PROGRESS
+        <Grid>
+            <CardSmall title="peak rank" description="global#736 ca#36" colour="var(--colour-osu-dim)" />
+            <CardSmall title="mapping" description="60+ maps created" colour="var(--colour-osu-dim)" />
+            <CardSmall title="tournament staffing" description="6+ hosted, 12+ cred. staff roles" colour="var(--colour-osu-dim)" />
+        </Grid>
+
+        <br>
+        <Button theme="light" link="https://osu.ppy.sh/users/5554231">visit my profile</Button>
+        <br>
+        <b>osu!</b> is a community-driven rhythm game that i have been involved with for over <b>11 years. </b> 
+        i have competed in multiple tournaments, and i’m heavily involved with the local osu! and rhythm game scene.
     </Block>
 
     <Block>
@@ -54,7 +67,41 @@ import Card from "../components/Card.astro";
         wise man says that the things you like tells people a lot about who you are<br>
         so here are my top 4s of various things in various categories
 
-        GALLERY STYLE WORK IN PROGRESS
+        <h4>movies/shows</h4>
+
+        <Grid columns="4">
+            <CardTall title="Lahn Mah" description="2024" />
+            <CardTall title="The Apothecary Diaries" description="2023" />
+            <CardTall title="House MD" description="2004" />
+            <CardTall title="Ip Man" description="2008" />
+        </Grid><br>
+
+        <h4>games</h4>
+        
+        <Grid columns="4">
+            <CardTall></CardTall>
+            <CardTall></CardTall>
+            <CardTall></CardTall>
+            <CardTall></CardTall>
+        </Grid><br>
+
+        <h4>music artists</h4>
+        
+        <Grid columns="4">
+            <CardTall></CardTall>
+            <CardTall></CardTall>
+            <CardTall></CardTall>
+            <CardTall></CardTall>
+        </Grid><br>
+
+        <h4>dishes</h4>
+        
+        <Grid columns="4">
+            <CardTall></CardTall>
+            <CardTall></CardTall>
+            <CardTall></CardTall>
+            <CardTall></CardTall>
+        </Grid><br>
     </Block>
 
 </Layout>

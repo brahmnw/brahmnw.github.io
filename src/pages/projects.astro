@@ -1,10 +1,26 @@
 ---
-import Layout from "../layouts/Layout.astro"
-import Block from "../components/Block.astro"
-import Header from "../components/Header.astro"
+import Layout from "../layouts/Layout.astro";
+import Block from "../components/Block.astro";
+import Header from "../components/Header.astro";
+import FeaturedWork from "../components/FeaturedWork.astro"
 ---
 
 <Layout>
     <Header>projects</Header>
-    <Block>wip</Block>
+
+    <Block>
+        <h3>my <span class="accent-dim">portfolio</span> &gt</h3>
+        this page is a collection of my work in game dev, ux/ui, web dev, or graphic design!
+    </Block>
+
+    <Block theme="dark">
+		<h3>featured work &gt;</h3>
+
+		<FeaturedWork />
+	</Block>
+
+    <Block>
+        <h3>other <span class="accent-dim">projects</span> &gt</h3>
+        working on implementing this.. sorry...
+    </Block>
 </Layout>
