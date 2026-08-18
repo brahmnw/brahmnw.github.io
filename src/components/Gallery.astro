@@ -23,7 +23,7 @@ const images = Object.entries(allImages)
 </div>
 
 <style>
-    .gallery {
+.gallery {
     columns: 3;
     column-gap: 1.5rem;
 }
@@ -42,6 +42,15 @@ const images = Object.entries(allImages)
 
 .gallery img:hover {
     transform: scale(1.02);
+}
+
+@media (max-width: 600px) {
+    .gallery {
+        grid-template-columns: 1fr;
+        columns: 2;
+        column-gap: 0.75rem;
+        row-gap: 0.75rem;
+    }
 }
 
 </style>

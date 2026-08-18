@@ -1,7 +1,7 @@
 
 <nav class="navbar light">
     <div class="navbar-content">
-        <a class="navbar-name" style="font-size: 1.1rem; letter-spacing: 0.17em; font-family: var(--font-header)" href="/">NARAWUTTI</a>
+        <a class="navbar-name" href="/">NARAWUTTI</a>
         <div class="navbar-links">
             <a href="/about">about</a>
             <a href="/projects">projects</a>
@@ -53,5 +53,21 @@
     .navbar-content a:hover {
         color: var(--theme-colour-accent-dim);
         text-decoration: none;
+    }
+
+    .navbar-name {
+        font-size: 1.1rem; 
+        letter-spacing: 0.17em; 
+        font-family: var(--font-header)
+    }
+
+    @media (max-width: 600px) {
+        .navbar-links {
+            gap: 1rem;
+        }
+
+        .navbar-name {
+            font-size: 1rem;
+        }
     }
 </style>
