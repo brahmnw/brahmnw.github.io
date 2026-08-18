@@ -9,12 +9,29 @@ import Block from '../components/Block.astro';
 	<Splash>
 		<div class="shadow">
 			<h1 style="font-size: 6rem; color: #fff; line-height: 0.1;">i'm <span class="accent">brahm!</span></h1>
-			<h3 class="font-thai">บราห์ม วงษ์วันทนีย์</h3>
+			<h3 class="font-thai" style="font-weight: 400;">บราห์ม วงษ์วันทนีย์</h3>
+			<div class="social-links">
+            	<a href="https://www.linkedin.com/in/brahmnw/" aria-label="LinkedIn">
+					<img src="../src/assets/icons/social-media/icon-linkedin.svg" />
+				</a>
+				<a href="https://github.com/brahmnw" aria-label="GitHub">
+					<img src="../src/assets/icons/social-media/icon-github.svg" />
+				</a>
+				<a href="https://www.instagram.com/narawutti/" aria-label="Instagram">
+					<img src="../src/assets/icons/social-media/icon-instagram.svg" />
+				</a>
+				<a href="https://www.youtube.com/@brhmnw" aria-label="YouTube">
+					<img src="../src/assets/icons/social-media/icon-youtube.svg" />
+				</a>
+				<a href="https://osu.ppy.sh/users/5554231" aria-label="osu!">
+					<img src="../src/assets/icons/social-media/icon-osu.png" />
+				</a>
+        	</div>
 		</div>
 	</Splash>
 
 	<Block theme="light">
-		<h3>about me ></h3>
+		<h3><span class="accent-dim">sawadee</span> kub &gt;</h3>
 		i’m <b>narawutti wongwandanee</b>, but i go by <b>brahm</b>. i’m an 3rd year computer science undergraduate student at the <b>university of british columbia</b>! 
 		i’m interested game design and ui/ux. i’m also a part-time illustrator.<br><br>
 
@@ -22,13 +39,35 @@ import Block from '../components/Block.astro';
 	</Block>
 
 	<Block theme="dark">
-		<h3>extracurricular involvement</h3>
+		<h3>featured work &gt;</h3>
 		<b>hello world!</b> hello world!
 	</Block>
 
 	<Block theme="light">
-		<h3>illustration gallery</h3>
+		<h3>illustration gallery &gt;</h3>
 		<b>hello world!</b> hello world!
 	</Block>
 	
 </Layout>
+
+<style>
+
+.social-links {
+	display: flex;
+	gap: 1rem;
+}
+
+.social-links img {
+    width: 2rem;
+    height: 2rem;
+    object-fit: contain;
+	filter: brightness(0) invert(1);
+	transition: transform 0.2s ease-out;
+}
+
+.social-links img:hover {
+    transform: translateY(-0.1rem);
+	filter: brightness(0) invert(1) drop-shadow(0px 0px 4px var(--theme-colour-accent-bright));
+}
+
+</style>
