@@ -5,6 +5,12 @@ import Block from '../components/Block.astro';
 import Button from "../components/Button.astro";
 import FeaturedWork from '../components/FeaturedWork.astro';
 import Gallery from "../components/Gallery.astro"
+
+import linkedinIcon from "../assets/icons/social-media/icon-linkedin.svg";
+import githubIcon from "../assets/icons/social-media/icon-github.svg";
+import instagramIcon from "../assets/icons/social-media/icon-instagram.svg";
+import youtubeIcon from "../assets/icons/social-media/icon-youtube.svg";
+import osuIcon from "../assets/icons/social-media/icon-osu.png";
 ---
 
 <Layout>
@@ -15,19 +21,19 @@ import Gallery from "../components/Gallery.astro"
 			<h3 class="font-thai" style="font-weight: 400;">บราห์ม วงษ์วันทนีย์</h3>
 			<div class="social-links">
             	<a href="https://www.linkedin.com/in/brahmnw/" aria-label="LinkedIn">
-					<img src="../src/assets/icons/social-media/icon-linkedin.svg" />
+					<img src={linkedinIcon.src} />
 				</a>
 				<a href="https://github.com/brahmnw" aria-label="GitHub">
-					<img src="../src/assets/icons/social-media/icon-github.svg" />
+					<img src={githubIcon.src} />
 				</a>
 				<a href="https://www.instagram.com/narawutti/" aria-label="Instagram">
-					<img src="../src/assets/icons/social-media/icon-instagram.svg" />
+					<img src={instagramIcon.src} />
 				</a>
 				<a href="https://www.youtube.com/@brhmnw" aria-label="YouTube">
-					<img src="../src/assets/icons/social-media/icon-youtube.svg" />
+					<img src={youtubeIcon.src} />
 				</a>
 				<a href="https://osu.ppy.sh/users/5554231" aria-label="osu!">
-					<img src="../src/assets/icons/social-media/icon-osu.png" />
+					<img src={osuIcon.src} />
 				</a>
         	</div>
 		</div>
@@ -44,7 +50,7 @@ import Gallery from "../components/Gallery.astro"
 	</Block>
 
 	<Block theme="dark">
-		<h3>featured work &gt;</h3>
+		<h3>featured projects &gt;</h3>
 
 		<FeaturedWork />
 		<br>
@@ -52,7 +58,7 @@ import Gallery from "../components/Gallery.astro"
 	</Block>
 
 	<Block theme="light">
-		<h3>illustration <span class="accent-dim">gallery</span> &gt</h3>
+		<h3>featured <span class="accent-dim">illustrations</span> &gt</h3>
 		<Button link="/illustrations">view more of my art</Button>
 		<br>
 		<Gallery folder="featured"/>
