@@ -15,6 +15,7 @@
     --colour-osu-dim: #AC659C;
     --colour-favourites: #696CFF;
     --colour-extracurriculars: #F44965;
+    --colour-feature: #FFD08E;
 
     /* FONTS */
     --font-header: "Momo Trust Display", "Nunito", "Trebuchet MS", "Arial Black", sans-serif;
@@ -62,6 +63,10 @@ body {
 
 .accent-extracurriculars {
     color: var(--colour-extracurriculars);
+}
+
+.accent-feature {
+    color: var(--colour-feature);
 }
 
 .font-thai {

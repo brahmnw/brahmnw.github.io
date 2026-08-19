@@ -1,0 +1,95 @@
+---
+import Card from "./Card.astro";
+import Grid from "./Grid.astro";
+import Button from "./Button.astro";
+---
+
+<section class={`block`}>
+    <div class="block-content">
+        <h1 style="font-size: 6rem;">naora</h1>
+        NAORA is a joint venture with <b>me (narawutti)</b> and fellow artist <b>nao</b> to share our art and make merch for artist alleys and conventions.
+        <br><br>
+
+        <h3 style="text-align: left;">our next events</h3>
+        <Grid>
+            <Card 
+                title="UBC Makers Market"
+                table="?"
+                location="AMS Student Nest, Vancouver   "
+                date="Nov 2026"
+                link="https://makersmarket5.wixsite.com/ubc-makers-market"
+                image="/images/misc-thumb/naora-1.jpg" />
+
+            <Card 
+                title="UBC Gaming Expo"
+                table="?"
+                location="AMS Student Nest, Vancouver"
+                date="Feb 2027"
+                link="https://www.ubcesports.ca/"
+                image="/images/misc-thumb/naora-2.png" />
+
+            <Card 
+                title="Popup Hanami"
+                table="?"
+                location="AMS Student Nest, Vancouver"
+                date="Apr 2027"
+                link="https://www.popup-hanami.ca/"
+                image="/images/misc-thumb/naora-3.jpg" />
+        </Grid>
+        <i style="font-size: 1rem; text-align: left;">I haven't applied to anything yet so actually these are all fake but I wanted to populate this section!</i>
+        <br><br>
+        <Button link="https://www.instagram.com/_na0ra/">check out our instagram!</Button>
+    </div>
+</section>
+
+<style>
+
+
+
+.block {
+    position: relative;
+    isolation: isolate;
+    font-family: "Spectral", serif;
+    font-weight: 300;
+    text-align: center;
+    color: #BABABA;
+}
+
+.block::before {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    content: "";
+
+    background-color: #000;
+    background-image: url("/naora/bg-texture.png");
+    background-repeat: repeat;
+}
+
+.block-content {
+    width: min(
+        90%,
+        960px
+    );
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin-inline: auto;
+    
+}
+
+b {
+    font-weight: 700;
+}
+
+h1 {
+    font-family: "Nova Cut", serif;
+}
+
+h2 {
+    font-family: "Nova Cut", serif;
+}
+h3 {
+    font-family: "Nova Cut", serif;
+}
+
+</style>
