@@ -2,8 +2,17 @@
 import Layout from "../layouts/Layout.astro";
 import Block from "../components/Block.astro";
 import Header from "../components/Header.astro";
-import FeaturedWork from "../components/FeaturedWork.astro"
+import Grid from "../components/Grid.astro";
+import CardProject from "../components/CardProject.astro";
+import CardAttrib from "../components/CardAttrib.astro";
+import FeaturedWork from "../components/FeaturedWork.astro";
+import { getCollection } from "astro:content";
+
+
+const projects = await getCollection("moreProjects");
 ---
+
+
 
 <Layout>
     <Header>projects</Header>
@@ -21,6 +30,27 @@ import FeaturedWork from "../components/FeaturedWork.astro"
 
     <Block>
         <h3>other <span class="accent-dim">projects</span> &gt</h3>
-        working on implementing this.. sorry...
+
+
+
+        <Grid columns="1">
+            {projects.map((project) => (
+                <CardProject
+                    title={project.data.title}
+                    description={project.data.description}
+                    link={project.data.link}
+                    image={project.data.image}>
+                        
+
+                    <div class="horizontal" style="justify-content: flex-start;">
+                        {project.data.tags.map((tag) => (
+                            <CardAttrib>{tag}</CardAttrib>
+                        ))}
+                    </div>
+                </CardProject>
+            ))}
+
+        </Grid>
+        
     </Block>
 </Layout>

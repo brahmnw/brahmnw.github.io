@@ -2,12 +2,13 @@
 const {
     title = "test",
     description = "test",
+    link="/",
     image = "/images/test.png",
     colour = "var(--theme-colour-accent-dim)",
 } = Astro.props;
 ---
 
-<div class="card" style={`--card-shadow-colour: ${colour};`}>
+<a href={link} class="card" style={`--card-shadow-colour: ${colour};`}>
     <img class="card-image" src={image} />
     <div class="card-contents">
         <span class="card-title">{title}</span><br>
@@ -15,7 +16,7 @@ const {
     </div>
     <div class="card-slots"><slot /></div>
     
-</div>
+</a>
 
 <style>
 
@@ -27,6 +28,7 @@ const {
 
     transition: transform 0.2s ease-out;
     filter: drop-shadow(0px 4px 0px var(--card-shadow-colour));
+    text-decoration: none;
 }
 
 .card:hover {

@@ -1,0 +1,29 @@
+[
+    {
+        "id": "cafe-manager",
+        "title": "cafe manager",
+        "description": "java cafe manager made with junit tests, persistence and interactive gui",
+        "link": "https://github.com/brahmnw/cafe-manager",
+        "image": "/images/project-thumb/cafeman-thumb.png",
+        "tags": [
+            "java",
+            "swing",
+            "gui",
+            "junit"
+        ]
+    },
+
+    {
+        "id": "ggds",
+        "title": "gigi's delivery service",
+        "description": "bullet hell game written in pygame where a pizza delivery girl has to navigate a dangerous cyberpunk world",
+        "link": "https://github.com/brahmnw/ggds-py",
+        "image": "/images/project-thumb/ggds-thumb.png",
+        "tags": [
+            "python",
+            "pygame",
+            "game dev",
+            "pixel art"
+        ]
+    }
+]

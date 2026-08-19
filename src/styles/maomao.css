@@ -83,6 +83,16 @@ body {
     padding-bottom: 0.2rem;
 }
 
+.horizontal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+
+    flex-wrap: wrap;
+}
+
 /* TEXT EDITS */
 
 h1 {

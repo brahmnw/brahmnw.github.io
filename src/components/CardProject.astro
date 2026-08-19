@@ -2,25 +2,38 @@
 const {
     title = "test",
     description = "test",
-    image = "images/test.png",
-    link = "/",
-    colour = "var(--colour-favourites)",
+    link = "/projects/",
+    image = "/images/test.png",
+    colour = "var(--theme-colour-accent-dim)",
 } = Astro.props;
 ---
 
 <a href={link} class="card" style={`--card-shadow-colour: ${colour};`}>
-    <img class="card-image" src={image} />
-    <div class="card-contents">
-        <span class="card-title">{title}</span><br>
-        <span class="card-description">{description}</span>
+
+    <div class="card-image" style={`background-image: url("${image}")`}></div>
+
+    <div>
+        <div class="card-contents">
+            <span class="card-title">{title}</span><br>
+            <span class="card-description">{description}</span>
+        
+        </div>
+    
+        <div class="card-slots"><slot /></div>
     </div>
-    <div class="card-slots"><slot /></div>
     
 </a>
 
 <style>
 
 .card {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: stretch;
+    gap: 1.5rem;
+
     background-color: var(--theme-colour-dark);
     color: var(--theme-colour-light);
     border-radius: 0.75rem;
@@ -37,27 +50,30 @@ const {
 }
 
 .card-image {
-    width: 100%;
-    height: 300px;
+    aspect-ratio: 1 / 1;
+    flex-shrink: 0;
+    height: auto;
     border-radius: 0.75rem;
     object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .card-title {
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-family: var(--font-header);
-    text-align: center;
 }
 
 .card-description {
-    font-size: 0.75rem;
+    font-size: 1rem;
 }
 
 .card-contents {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: left;
 
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
@@ -66,8 +82,8 @@ const {
 .card-slots {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: left;
 }
 
 </style>
