@@ -1,0 +1,45 @@
+[
+    {
+        "id": "robomao",
+        "title": "robomao",
+        "year": 2022,
+        "description": "discord bot with text-based games, custom user profiles, and external API fetching",
+        "link": "https://github.com/brahmnw/Eruchi",
+        "image": "/images/project-thumb/robomao-thumb.png",
+        "tags": [
+            "discord bot",
+            "async",
+            "bot dev",
+            "python"
+        ]
+    },
+
+    {
+        "id": "ggds",
+        "title": "gigi's delivery service",
+        "year": 2024,
+        "description": "bullet hell game written in pygame where a pizza delivery girl has to navigate a dangerous cyberpunk world",
+        "link": "https://github.com/brahmnw/ggds-py",
+        "image": "/images/project-thumb/ggds-thumb.png",
+        "tags": [
+            "python",
+            "pygame",
+            "game dev",
+            "pixel art"
+        ]
+    },
+
+    {
+        "id": "ubcea-web",
+        "title": "ubcea website design",
+        "year": 2026,
+        "description": "website design draft for ubc esports club",
+        "link": "https://github.com/brahmnw/https://www.ubcesports.ca/",
+        "image": "/images/project-thumb/ubcea-thumb.png",
+        "tags": [
+            "ux/ui",
+            "graphic design"
+        ]
+    }
+
+]

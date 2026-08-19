@@ -5,6 +5,7 @@ const {
     link = "/projects/",
     image = "/images/test.png",
     colour = "var(--theme-colour-accent-dim)",
+    year = "2001",
 } = Astro.props;
 ---
 
@@ -14,7 +15,7 @@ const {
 
     <div>
         <div class="card-contents">
-            <span class="card-title">{title}</span><br>
+            <span class="font-mono" style="font-size:1rem;">{year}</span><span class="card-title"> {title}</span><br>
             <span class="card-description">{description}</span>
         
         </div>

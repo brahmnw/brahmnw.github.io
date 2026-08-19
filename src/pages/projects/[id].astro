@@ -1,0 +1,44 @@
+---
+import { getCollection, render } from "astro:content";
+
+import Layout from "../../layouts/Layout.astro";
+import Header from "../../components/Header.astro";
+import Block from "../../components/Block.astro";
+import CardAttrib from "../../components/CardAttrib.astro";
+
+export async function getStaticPaths() {
+    const projects = await getCollection(
+        "projects",
+        ({ data }) => data.hasPage
+    );
+
+    return projects.map((project) => ({
+        params: {
+            id: project.id,
+        },
+        props: {
+            project,
+        },
+    }));
+}
+
+const { project } = Astro.props;
+
+const { Content } = await render(project);
+---
+
+<Layout>
+    <Header>{project.data.title}</Header>
+
+    <Block>
+        <p>{project.data.description}</p>
+
+        <div class="horizontal" style="justify-content: flex-start;">
+            {project.data.tags.map((tag) => (
+                <CardAttrib>{tag}</CardAttrib>
+            ))}
+        </div>
+
+        <Content />
+    </Block>
+</Layout>
