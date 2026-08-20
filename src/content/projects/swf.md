@@ -10,7 +10,7 @@
     - "characters"
 
 hasPage: true
-featured: true
+featured: false
 featuredOrder: 2
 ---
 

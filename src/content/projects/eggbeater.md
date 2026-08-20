@@ -1,5 +1,5 @@
 ---
-"title": "eggbeater"
+"title": "eggBEATer"
 "year": 2026
 "description": "a cute rhythm game rpg!"
 "link": "/projects/eggbeater"
