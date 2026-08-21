@@ -5,10 +5,9 @@
 "link": "https://github.com/brahmnw/Eruchi"
 "image": "/images/project-thumb/robomao-thumb.png"
 "tags": 
-    - "discord bot"
-    - "async"
-    - "bot dev"
     - "python"
+    - "discord bot"
+    - "api integration"
 
 hasPage: false
 featured: false

@@ -5,10 +5,8 @@
 "link": "https://github.com/brahmnw/ggds-py"
 "image": "/images/project-thumb/ggds-thumb.png"
 "tags": 
-    - "pygame"
-    - "pixel art"
-    - "game dev"
     - "python"
+    - "pygame"
 
 hasPage: false
 featured: false

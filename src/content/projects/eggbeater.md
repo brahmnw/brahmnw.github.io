@@ -5,10 +5,9 @@
 "link": "/projects/eggbeater"
 "image": "/images/project-thumb/ggds-thumb.png"
 "tags": 
-    - "godot"
     - "c#"
-    - "game dev"
-    - "ux/ui"
+    - ".NET"
+    - "osu!framework"
 
 hasPage: true
 featured: true

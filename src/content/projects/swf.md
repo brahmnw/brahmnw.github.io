@@ -7,7 +7,7 @@
 "tags": 
     - "godot"
     - "ux/ui"
-    - "characters"
+    - "character design"
 
 hasPage: true
 featured: false
