@@ -6,7 +6,7 @@
 "image": "/images/project-thumb/robomao-thumb.png"
 "tags": 
     - "python"
-    - "discord bot"
+    - "discord.py"
     - "api integration"
 
 hasPage: false
