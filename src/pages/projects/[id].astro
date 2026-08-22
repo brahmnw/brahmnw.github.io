@@ -28,17 +28,60 @@ const { Content } = await render(project);
 ---
 
 <Layout>
-    <Header>{project.data.title}</Header>
+    <Header>project overview</Header>
 
-    <Block>
-        <p>{project.data.description}</p>
-
-        <div class="horizontal" style="justify-content: flex-start;">
-            {project.data.tags.map((tag) => (
-                <CardAttrib>{tag}</CardAttrib>
-            ))}
+    <Block theme="dark">
+        <div class="project-details">
+            <img src={project.data.image} /><br><br>
+            <h3>{project.data.title}</h3>
+            {project.data.description}
+            <div class="horizontal tags">
+                {project.data.tags.map((tag) => (
+                    <CardAttrib>{tag}</CardAttrib>
+                ))}
+        </div><br>  
+        
         </div>
-
-        <Content />
+    </Block>
+    <Block>
+        <div class="project-content">
+            <Content />
+        </div>
     </Block>
 </Layout>
+
+<style>
+    .project-details {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 0.75rem;
+    }
+
+    .project-details h3 {
+        margin: 0;
+    }
+
+    img {
+        width:100%;
+        border-radius: 0.75rem;
+    }
+
+    img {
+        width: 100%;
+        border-radius: 0.75rem;
+    }
+
+    .project-content :global(p:has(img)) {
+        margin: 0;
+    }
+
+    .project-content :global(img) {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        border-radius: 0.75rem;
+    }
+    
+</style>
