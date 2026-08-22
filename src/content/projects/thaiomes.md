@@ -15,11 +15,11 @@ featuredOrder: 2
 ---
 
 #### inspiration
-i was playing minecraft earlier, scouting for somewhere to build my base - and i jokingly said that i'm going to build thailand in minecraft.
+i was playing minecraft earlier, scouting for somewhere to build my base and i jokingly said that i'm going to build thailand in minecraft.
 
-i quickly realized though, that none of the vanilla minecraft biomes really fit what i was building... and i realized...
+i quickly realized though, that none of the vanilla minecraft biomes really fit what i was building... 
 
-why don't i just build it myself?
+so why don't i just build it myself?
 
 i thought that this could be an incredibly fun project involving procedural world generation and working within the minecraft ecosystem!
 
