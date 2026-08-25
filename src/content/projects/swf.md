@@ -2,6 +2,7 @@
 "title": "spellcast showdown"
 "year": 2026
 "description": "ux/ui for bullethell roguelike game"
+"role": "ui/ux designer"
 "link": "/projects/swf"
 "image": "/images/project-thumb/swf-thumb.png"
 "tags": 

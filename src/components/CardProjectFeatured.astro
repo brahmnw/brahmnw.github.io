@@ -2,42 +2,29 @@
 const {
     title = "test",
     description = "test",
-    role = "test",
-    link = "/projects/",
+    link="/",
+    role="test",
     image = "/images/test.png",
     colour = "var(--theme-colour-accent-dim)",
-    year = "2001",
 } = Astro.props;
 ---
 
 <a href={link} class="card" style={`--card-shadow-colour: ${colour};`}>
-
-    <div class="card-image" style={`background-image: url("${image}")`}></div>
-
-    <div>
-        <div class="card-contents">
-            <span class="font-mono" style="font-size:1rem;">{year} • {role}</span><span class="card-title"> {title}</span><br>
-            <span class="card-description">{description}</span>
-        
-        </div>
-    
-        <div class="card-slots"><slot /></div>
+    <img class="card-image" src={image} />
+    <div class="card-contents">
+        <span class="card-title">{title}</span><br>
+        <span class="card-role"><b><i>{role}</i></b></span><br>
+        <span class="card-description">{description}</span>
     </div>
+    <div class="card-slots"><slot /></div>
     
 </a>
 
 <style>
 
 .card {
-
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    align-items: stretch;
-    gap: 1.5rem;
-
-    background-color: var(--theme-colour-dark);
-    color: var(--theme-colour-light);
+    background-color: var(--theme-colour-light);
+    color: var(--theme-colour-dark);
     border-radius: 0.75rem;
     padding: 1rem;
 
@@ -52,14 +39,10 @@ const {
 }
 
 .card-image {
-    aspect-ratio: 1 / 1;
-    flex-shrink: 0;
-    height: auto;
+    width: 100%;
+    height: 200px;
     border-radius: 0.75rem;
     object-fit: cover;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 .card-title {
@@ -69,13 +52,21 @@ const {
 
 .card-description {
     font-size: 1rem;
+    text-align: center;
+}
+
+.card-role {
+    font-size: 0.8rem;
+    color: var(--theme-colour-accent-dim);
+    font-family: var(--font-mono);
+    text-align: center;
 }
 
 .card-contents {
     display: flex;
     flex-direction: column;
-    justify-content: left;
-    align-items: left;
+    justify-content: center;
+    align-items: center;
 
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
@@ -84,8 +75,8 @@ const {
 .card-slots {
     display: flex;
     flex-direction: column;
-    justify-content: left;
-    align-items: left;
+    justify-content: center;
+    align-items: center;
 }
 
 </style>

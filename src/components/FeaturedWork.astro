@@ -1,6 +1,6 @@
 ---
 import Grid from "./Grid.astro";
-import Card from "./Card.astro";
+import CardProjectFeatured from "./CardProjectFeatured.astro";
 import CardAttrib from "./CardAttrib.astro";
 
 import { getCollection } from "astro:content";
@@ -12,17 +12,18 @@ const featuredProjects = projects.filter((project) => project.data.featured).sor
 
 <Grid>
 	{featuredProjects.map( (project) => (
-		<Card 
+		<CardProjectFeatured 
 			title={project.data.title}
         	description={project.data.description}
         	link={project.data.link}
         	image={project.data.image}
-        	year={project.data.year}>
+        	year={project.data.year}
+			role={project.data.role}>
 
 			<div class="horizontal">
 				{project.data.tags.map( (tag) => (<CardAttrib>{tag}</CardAttrib>))}
 			</div>
-		</Card>
+		</CardProjectFeatured>
 	))}
 
 </Grid>

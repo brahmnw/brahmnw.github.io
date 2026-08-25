@@ -1,7 +1,8 @@
 ---
 "title": "narawutti web"
 "year": 2026
-"description": "this portfolio/projects website!"
+"description": "cs and illustration portfolio designed and developed from scratch"
+"role": "developer"
 "link": "/projects/website"
 "image": "/images/project-thumb/site-thumb.png"
 "tags": 

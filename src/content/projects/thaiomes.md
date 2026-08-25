@@ -1,7 +1,8 @@
 ---
 "title": "thaiOmes"
 "year": 2026
-"description": "thai inspired minecraft biomes mod"
+"description": "custom procedurally generated terrain and biomes inspired by thailand"
+"role": "developer"
 "link": "/projects/thaiomes"
 "image": "/images/projects/thaiomes/thumb.png"
 "tags": 
