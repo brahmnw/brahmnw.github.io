@@ -4,7 +4,7 @@
 "description": "a rhythm game with integrated rpg mechanics and chart editor"
 "role": "developer"
 "link": "/projects/eggbeater"
-"image": "/images/project-thumb/ggds-thumb.png"
+"image": "/images/projects/eggbeater/thumb.png"
 "tags": 
     - "c#"
     - ".NET"
