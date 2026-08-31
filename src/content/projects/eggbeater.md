@@ -1,5 +1,5 @@
 ---
-"title": "eggBEATer"
+"title": "eggBeatr"
 "year": 2026
 "description": "a rhythm game with integrated rpg mechanics and chart editor"
 "role": "developer"
