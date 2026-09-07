@@ -12,7 +12,7 @@
     - "ux/ui"
 
 hasPage: true
-featured: true
+featured: false
 featuredOrder: 1
 ---
 
